@@ -8,17 +8,5 @@ The project is organized into two main parts:
 - The **client** folder contains the React frontend application styled using Tailwind CSS.
 - The **server** folder includes the Express-based backend server which handles authentication and WebSocket communication via Socket.IO.
 
-This project demonstrates how to integrate JWT-based authentication with WebSocket connections, making it ideal for anyone learning real-time applications or authentication flows in modern web development.
+This project demonstrates integration of JWT-based authentication with WebSocket connections, making it ideal for anyone learning real-time applications .
 
-## 🧑‍💻 Setup Instructions
-
-To run the project locally, you need to install dependencies for both the client and server. Make sure Node.js is installed on your system.
-
-```bash
-# Install frontend dependencies
-cd client
-npm install
-
-# Install backend dependencies
-cd ../server
-npm install
