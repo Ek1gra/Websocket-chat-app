@@ -7,10 +7,10 @@ const Chat = ({ token }) => {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    const newSocket = io('http://localhost:4000', {
-      auth: { token }
-    });
-
+    const newSocket = io('https://chatx-vppm.onrender.com', {
+  auth: { token }
+});
+    
     newSocket.on('message', msg => {
       setMessages(prev => [...prev, msg]);
     });
