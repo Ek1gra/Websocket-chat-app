@@ -9,7 +9,7 @@ const Login = ({ onLogin }) => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:4000/login', { username, password });
+      const res = await axios.post('https://chatx-vppm.onrender.com/login', { username, password });
       onLogin(res.data.token);
     } catch (err) {
       setError('Invalid credentials');
